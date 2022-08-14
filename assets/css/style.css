@@ -1,0 +1,216 @@
+/*style.css */
+
+*{
+    font-family: serif;
+}
+
+.heading {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: black;
+}
+
+.PaintbrushesLeft img{
+    height: 150px;
+    background-color: black;
+}
+
+.PaintbrushesLeft {
+    height: 150px;
+    align-content: center;
+}
+
+.PaintbrushesRight img{
+    height: 90px;
+    align-content: center;
+}
+
+.Signature{
+    font-size: 50px;
+    color: white;
+    font-family: serif;
+}
+
+/* Link menu*/
+
+.navigation-menu ul{
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    padding:0;
+    justify-content: space-evenly;
+    height: 40px;
+    align-content: center;
+    /*border-top-color: black;
+    border-top-style: groove; */
+    border-bottom-color: black;
+    border-bottom-style: groove;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: black;
+    align-items: center;
+}
+
+li a {
+    color: white;
+    font-size: 25px;
+}
+
+
+/* Slideshow Styling: */
+
+.container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.owl-carousel {
+    align-content: center;
+}
+
+/* Next & Prev Buttons: */
+
+.owl-carousel .owl-nav{
+    overflow: hidden;
+    height: 0px;
+  }
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+     background: #2caae1;
+}
+
+.owl-carousel .nav-btn{
+    height: 47px;
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+    top: 225px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.owl-carousel .prev-slide{
+    background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+}
+.owl-carousel .next-slide{
+    background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -24px 0px;
+    right: -33px;
+}
+.owl-carousel .prev-slide:hover{
+    background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover{
+    background-position: -24px -53px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-content: center;  
+}
+
+.about h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.about .Paintbrushes img{
+    height: 100px; 
+}
+
+.bio {
+    padding-left: 25%;
+    padding-right:25%;
+    text-align: center;
+    padding-bottom: 3%; 
+    font-size: 25px;
+}
+
+.Joe {
+    height: 50px;
+    border-top-color: black;
+    border-top-style: groove;
+    background-color: white;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 2.25%;
+    color: black;
+}
+
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-height: 600px;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .item img{
+      height: 250px;
+    }
+  .modal-content {
+      max-height: 50%;
+    }
+    
+ .owl-carousel .nav-btn{
+      top: 39% !important;
+    }
+}
+
